@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="485.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerClass.AnalyseController">
+    <TableView fx:id="bookTable1" AnchorPane.bottomAnchor="41" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+ 
+      <columns>
+         <TableColumn fx:id="idCol" text="ID" />
+         <TableColumn fx:id="nameCol" text="商品名" />
+         <TableColumn fx:id="categoryCol" text="カテゴリ" />
+         <TableColumn fx:id="priceCol" text="価格" />
+         <TableColumn fx:id="stockCol" text="在庫数" />
+         <TableColumn fx:id="sellCol" text="売上数" />
+       
+       
+      </columns>
+    </TableView>
+    <Button fx:id="closeButton" layoutX="570.0" layoutY="444.0" onAction="#handleCloseButtonAction" prefHeight="28.0" prefWidth="102.0" text="閉じる" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="10.0" />
+</AnchorPane>

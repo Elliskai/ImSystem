@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="485.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerClass.searchChoiceScene_01_Controller">
+
+    <TableView fx:id="bookTable1" prefHeight="440.0" prefWidth="700.0" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+
+        <columns>
+            <TableColumn fx:id="idCol" text="ID" />
+            <TableColumn fx:id="nameCol" text="商品名" />
+            <TableColumn fx:id="categoryCol" text="カテゴリ" />
+            <TableColumn fx:id="priceCol" text="価格" />
+            <TableColumn fx:id="stockCol" text="在庫数" />
+            <TableColumn fx:id="sellCol" text="売上数" />
+
+            <TableColumn fx:id="informationCol" text="商品説明" />
+        </columns>
+    </TableView>
+
+    <Label fx:id="label1" layoutX="69.0" layoutY="440.0" prefHeight="35.0" prefWidth="173.0" text="検索したい売上数を" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="457.66666666666663" />
+    <TextField fx:id="item_name" layoutX="187.0" layoutY="447.0" prefHeight="25.0" prefWidth="131.0" AnchorPane.bottomAnchor="12.666666666666686" AnchorPane.rightAnchor="381.66666666666663" />
+
+
+
+    <RadioButton fx:id="radioButton1" layoutX="332.0" layoutY="442.0" prefHeight="10.0" prefWidth="60.0" text="以上" AnchorPane.bottomAnchor="26.0" AnchorPane.rightAnchor="310.0" />
+    <RadioButton fx:id="radioButton2" layoutX="330.0" layoutY="463.0" prefHeight="10.0" prefWidth="60.0" text="以下" AnchorPane.bottomAnchor="4.666666666666686" AnchorPane.rightAnchor="310.0" />
+ 
+ 
+ <Button fx:id="closeButton" layoutX="545.0" layoutY="444.0" onAction="#handleCloseButtonAction" prefHeight="35.0" prefWidth="140.0" text="メインに戻る" AnchorPane.bottomAnchor="5.666666666666686" AnchorPane.rightAnchor="11.666666666666629" />
+ <Button fx:id="searchButton" layoutX="390.0" layoutY="444.0" onAction="#handlesearchButtonAction" prefHeight="35.0" prefWidth="140.0" text="検索" AnchorPane.bottomAnchor="5.666666666666686" AnchorPane.rightAnchor="166.66666666666663" />
+ 
+ 
+   <Label fx:id="label11" layoutX="69.0" layoutY="456.0" prefHeight="35.0" prefWidth="173.0" text="入力してください" />
+  
+
+</AnchorPane>

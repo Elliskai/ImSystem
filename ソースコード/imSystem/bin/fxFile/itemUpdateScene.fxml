@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="460.0" prefWidth="290.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerClass.itemUpdateController">
+   <VBox fx:id="vbox" alignment="CENTER" layoutX="0" layoutY="0" prefHeight="35.0" prefWidth="290.0" spacing="10" AnchorPane.bottomAnchor="332.0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+        <Text text="編集したいものを選択してください" />
+    </VBox>
+    <VBox fx:id="vbox" alignment="CENTER" layoutX="0" layoutY="227.0" prefHeight="359.0" prefWidth="297.0" spacing="10" AnchorPane.bottomAnchor="101.0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0.0">
+        <Button onAction="#updateByName" prefHeight="35.0" prefWidth="150.0" text="商品情報">
+            <VBox.margin>
+                <Insets bottom="10.0" />
+            </VBox.margin>
+        </Button>
+        <Button onAction="#updateStock" prefHeight="35.0" prefWidth="150.0" text="在庫数">
+            <VBox.margin>
+                <Insets bottom="10.0" />
+            </VBox.margin>
+        </Button>
+       
+       
+    </VBox>
+     <VBox alignment="CENTER" layoutX="7.0" layoutY="416.0" prefHeight="43.0" prefWidth="290.0">
+      <children>
+      <Button fx:id="closeButton" mnemonicParsing="false" onAction="#handleCloseButtonAction" prefHeight="30.0" prefWidth="150.0" text="戻る" />
+      </children>
+</VBox>
+</AnchorPane>

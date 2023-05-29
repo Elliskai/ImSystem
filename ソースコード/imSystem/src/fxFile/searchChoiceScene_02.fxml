@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="485.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerClass.searchChoiceScene_02_Controller">
+
+    <TableView fx:id="bookTable1" prefHeight="440.0" prefWidth="700.0" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+
+        <columns>
+            <TableColumn fx:id="idCol" text="ID" />
+            <TableColumn fx:id="nameCol" text="商品名" />
+            <TableColumn fx:id="categoryCol" text="カテゴリ" />
+            <TableColumn fx:id="priceCol" text="価格" />
+            <TableColumn fx:id="stockCol" text="在庫数" />
+            <TableColumn fx:id="sellCol" text="売上数" />
+            <TableColumn fx:id="informationCol" text="商品説明" />
+        </columns>
+    </TableView>
+
+    <Button fx:id="closeButton" layoutX="572.0" layoutY="445.0" onAction="#handleCloseButtonAction" prefHeight="35.0" prefWidth="120.0" text="メインに戻る" AnchorPane.bottomAnchor="4.666666666666686" AnchorPane.rightAnchor="8.0" />
+    <Button fx:id="searchButton" layoutX="444.0" layoutY="445.0" onAction="#searchItem" prefHeight="35.0" prefWidth="120.0" text="全部表示" AnchorPane.bottomAnchor="4.666666666666686" AnchorPane.rightAnchor="136.0" />
+ <Button fx:id="searchいButton_01" layoutX="316.0" layoutY="445.0" onAction="#searchItem_01" prefHeight="35.0" prefWidth="120.0" text="検索" AnchorPane.bottomAnchor="4.666666666666686" AnchorPane.rightAnchor="264.0" />
+ 
+    <Label fx:id="label1" layoutX="41.0" layoutY="448.0" text="検索したい商品名を" AnchorPane.bottomAnchor="19.666666666666686" AnchorPane.rightAnchor="562.3333333333333" />
+    <TextField fx:id="item_stock" layoutX="158.0" layoutY="451.0" AnchorPane.bottomAnchor="8.666666666666686" AnchorPane.rightAnchor="405.66666666666663" />
+   <Label fx:id="label11" layoutX="41.0" layoutY="461.0" text="入力してください" />
+
+</AnchorPane>
